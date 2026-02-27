@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Al Punto - Tapas y Comida Típica del Pirineo Aragonés</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --brand-color: #dbd0bb;
+        }
+        .bg-brand {
+            background-color: var(--brand-color);
+        }
+        .text-brand {
+            color: var(--brand-color);
+        }
+        .border-brand {
+            border-color: var(--brand-color);
+        }
+        .hover\:bg-brand-dark:hover {
+            background-color: #c2b59e; /* A slightly darker shade for hover */
+        }
+        .hero-bg {
+            background-image: url('https://images.unsplash.com/photo-1551782450-a2132b4fd83b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Placeholder image: tapas */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+    <!-- Hero Section (Attention) -->
+    <header class="hero-bg relative h-screen flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 p-8 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 drop-shadow-lg">
+                Bar Al Punto
+            </h1>
+            <p class="text-2xl md:text-3xl font-light mb-8 drop-shadow-lg">
+                Tu Rincón Auténtico en el Pirineo Aragonés
+            </p>
+            <p class="text-xl md:text-2xl mb-10 drop-shadow-lg">
+                Donde las Tapas y la Tradición se Encuentran.
+            </p>
+            <a href="#menu" class="bg-brand text-gray-900 hover:bg-brand-dark px-8 py-4 rounded-full text-lg font-semibold transition duration-300 ease-in-out shadow-lg">
+                Explora Nuestro Menú
+            </a>
+        </div>
+    </header>
+
+    <!-- About Section (Interest) -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h2 class="text-4xl font-bold mb-8 text-gray-900">
+                Sumérgete en la Auténtica Gastronomía Aragonesa
+            </h2>
+            <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                En Bar Al Punto, celebramos la riqueza culinaria del Pirineo Aragonés. Te invitamos a un viaje de sabores, desde las tapas más vibrantes y creativas hasta los platos más reconfortantes y tradicionales de nuestra tierra.
+            </p>
+            <p class="text-lg leading-relaxed text-gray-700">
+                Cada bocado es una historia: ingredientes frescos de proximidad, recetas ancestrales transmitidas con cariño y el toque casero que nos distingue. Ven y descubre por qué somos el punto de encuentro para los amantes de la buena mesa.
+            </p>
+        </div>
+    </section>
+
+    <!-- Offerings/Desire Section -->
+    <section id="offerings" class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">
+                Una Experiencia que Despertará tus Sentidos
+            </h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left">
+                    <h3 class="text-3xl font-semibold mb-4 text-gray-900">Tapas con Alma</h3>
+                    <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                        Imagina el crujido de unas patatas bravas perfectamente elaboradas, la explosión de sabor de una croqueta casera o la frescura de una tapa de temporada. Nuestras tapas son pequeñas obras de arte, ideales para compartir y disfrutar en buena compañía.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Cada una está pensada para sorprenderte y transportarte a la esencia de la cocina aragonesa, con un toque moderno y creativo.
+                    </p>
+                </div>
+                <div class="relative rounded-lg overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1981&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tapas variadas" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mt-16">
+                <div class="relative rounded-lg overflow-hidden shadow-xl md:order-2">
+                    <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plato de comida típica" class="w-full h-80 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                </div>
+                <div class="text-center md:text-left md:order-1">
+                    <h3 class="text-3xl font-semibold mb-4 text-gray-900">Platos Típicos del Pirineo</h3>
+                    <p class="text-lg leading-relaxed mb-6 text-gray-700">
+                        Déjate seducir por la calidez de un buen guiso de montaña, la robustez de unas migas del pastor o la ternura inigualable de un ternasco de Aragón. Nuestros platos principales son un homenaje a la tradición, cocinados a fuego lento y con el respeto que merecen los sabores auténticos.
+                    </p>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Cada receta es un legado, una invitación a sentir la esencia del Pirineo en tu paladar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (Action) -->
+    <section id="action" class="py-20 bg-brand text-gray-900 text-center">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-bold mb-6">
+                ¿Listo para Saborear el Pirineo?
+            </h2>
+            <p class="text-xl leading-relaxed mb-10">
+                Te esperamos en Bar Al Punto para que disfrutes de una experiencia gastronómica inolvidable.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="#" class="bg-gray-900 text-white hover:bg-gray-700 px-8 py-4 rounded-full text-lg font-semibold transition duration-300 ease-in-out shadow-lg">
+                    Ver Nuestro Menú Completo
+                </a>
+                <a href="#" class="bg-white text-gray-900 hover:bg-gray-200 px-8 py-4 rounded-full text-lg font-semibold transition duration-300 ease-in-out shadow-lg">
+                    Reservar una Mesa
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-white">Bar Al Punto</h3>
+                <p class="text-gray-400">Tu destino para tapas y cocina tradicional del Pirineo Aragonés.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-white">Contacto</h3>
+                <p class="text-gray-400">
+                    Dirección: Calle Ficticia, 123, Pueblo, Huesca<br>
+                    Teléfono: +34 123 456 789<br>
+                    Email: info@baralpunto.com
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-white">Horario</h3>
+                <p class="text-gray-400">
+                    Martes - Domingo: 12:00 - 16:00 | 19:00 - 23:00<br>
+                    Lunes: Cerrado
+                </p>
+            </div>
+        </div>
+        <div class="mt-10 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+            &copy; 2023 Bar Al Punto. Todos los derechos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
