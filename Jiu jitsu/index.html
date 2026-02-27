@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiu-Jitsu: Transforma Cuerpo y Mente</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥋</text></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom brand color */
+        .bg-brand { background-color: #dbd0bb; }
+        .text-brand { color: #dbd0bb; }
+        .border-brand { border-color: #dbd0bb; }
+        .hover\:bg-brand-dark:hover { background-color: #c2b59e; } /* Slightly darker for hover */
+        .bg-dark-bg { background-color: #1a1a1a; } /* Dark background for contrast */
+        .text-light-text { color: #f0f0f0; } /* Light text for dark background */
+    </style>
+</head>
+<body class="font-sans bg-dark-bg text-light-text">
+
+    <!-- Header/Hero Section (Attention) -->
+    <header class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1579126038374-6064e937796c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="absolute inset-0 bg-black opacity-70"></div>
+        </div>
+        <div class="relative z-10 p-8 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-brand">
+                Jiu-Jitsu: Domina el Arte Suave
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                Transforma tu cuerpo, mente y espíritu con el poder del Jiu-Jitsu.
+            </p>
+            <a href="#contact" class="bg-brand text-dark-bg font-bold py-3 px-8 rounded-full text-lg hover:bg-brand-dark transition duration-300 ease-in-out shadow-lg">
+                ¡Tu Primera Clase Gratis!
+            </a>
+        </div>
+    </header>
+
+    <!-- Benefits/Features Section (Interest) -->
+    <section id="benefits" class="py-16 px-4 bg-dark-bg">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-brand">¿Por Qué Entrenar Jiu-Jitsu?</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-8 bg-gray-800 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="text-5xl mb-4 text-brand">🛡️</div>
+                    <h3 class="text-2xl font-semibold mb-3 text-light-text">Defensa Personal Efectiva</h3>
+                    <p class="text-gray-400">Aprende técnicas probadas para protegerte en cualquier situación, sin importar tu tamaño o fuerza.</p>
+                </div>
+                <div class="p-8 bg-gray-800 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="text-5xl mb-4 text-brand">💪</div>
+                    <h3 class="text-2xl font-semibold mb-3 text-light-text">Mejora Física y Mental</h3>
+                    <p class="text-gray-400">Desarrolla fuerza, flexibilidad, resistencia y agilidad, mientras agudizas tu mente y reduces el estrés.</p>
+                </div>
+                <div class="p-8 bg-gray-800 rounded-lg shadow-xl transform hover:scale-105 transition duration-300 ease-in-out">
+                    <div class="text-5xl mb-4 text-brand">🤝</div>
+                    <h3 class="text-2xl font-semibold mb-3 text-light-text">Comunidad y Disciplina</h3>
+                    <p class="text-gray-400">Únete a una familia de apoyo, fomenta la disciplina, el respeto y la perseverancia en un ambiente positivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us / Why Choose Us (Desire) -->
+    <section id="about" class="py-16 px-4 bg-gray-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-brand">¿Por Qué Elegirnos?</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2 text-left">
+                    <p class="text-lg mb-6 text-gray-300">
+                        En nuestro dojo, no solo enseñamos Jiu-Jitsu; cultivamos un estilo de vida. Nuestros instructores certificados tienen años de experiencia y están dedicados a tu progreso, sin importar tu nivel.
+                    </p>
+                    <p class="text-lg mb-6 text-gray-300">
+                        Ofrecemos un ambiente seguro, inclusivo y desafiante donde cada estudiante puede florecer. Desde principiantes hasta avanzados, te guiaremos en cada paso de tu viaje.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-300 text-lg space-y-2">
+                        <li>Instructores altamente cualificados</li>
+                        <li>Clases para todas las edades y niveles</li>
+                        <li>Ambiente de aprendizaje positivo y seguro</li>
+                        <li>Enfoque en el desarrollo personal y técnico</li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1579126038374-6064e937796c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jiu-Jitsu training" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                </div>
+            </div>
+            <!-- Testimonials Placeholder -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold mb-8 text-brand">Lo que dicen nuestros alumnos</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-left">
+                        <p class="italic text-gray-300 mb-4">"Desde que empecé Jiu-Jitsu aquí, mi confianza ha crecido exponencialmente. Los instructores son increíbles y la comunidad es fantástica."</p>
+                        <p class="font-semibold text-brand">- Juan P.</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg text-left">
+                        <p class="italic text-gray-300 mb-4">"Nunca pensé que podría aprender defensa personal, pero aquí me han enseñado de una manera muy accesible y divertida. ¡Totalmente recomendado!"</p>
+                        <p class="font-semibold text-brand">- María G.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section (Action) -->
+    <section id="contact" class="py-16 px-4 bg-dark-bg text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-8 text-brand">¡Empieza Tu Viaje Hoy!</h2>
+            <p class="text-xl mb-10 text-gray-300">
+                ¿Listo para transformar tu vida? Contáctanos para reservar tu clase de prueba gratuita y descubre el poder del Jiu-Jitsu.
+            </p>
+            <form class="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-xl">
+                <div class="mb-6">
+                    <input type="text" placeholder="Tu Nombre" class="w-full p-4 rounded-md bg-gray-700 border border-gray-600 text-light-text focus:outline-none focus:border-brand" required>
+                </div>
+                <div class="mb-6">
+                    <input type="email" placeholder="Tu Correo Electrónico" class="w-full p-4 rounded-md bg-gray-700 border border-gray-600 text-light-text focus:outline-none focus:border-brand" required>
+                </div>
+                <div class="mb-6">
+                    <input type="tel" placeholder="Tu Teléfono (Opcional)" class="w-full p-4 rounded-md bg-gray-700 border border-gray-600 text-light-text focus:outline-none focus:border-brand">
+                </div>
+                <div class="mb-6">
+                    <textarea placeholder="Mensaje (Ej: 'Quiero mi clase de prueba')" rows="5" class="w-full p-4 rounded-md bg-gray-700 border border-gray-600 text-light-text focus:outline-none focus:border-brand"></textarea>
+                </div>
+                <button type="submit" class="bg-brand text-dark-bg font-bold py-4 px-10 rounded-full text-xl hover:bg-brand-dark transition duration-300 ease-in-out shadow-lg w-full">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 px-4 text-center text-gray-500 text-sm">
+        <div class="max-w-6xl mx-auto">
+            <p>&copy; 2023 Jiu-Jitsu Dojo. Todos los derechos reservados.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-brand transition duration-300">Política de Privacidad</a>
+                <a href="#" class="hover:text-brand transition duration-300">Términos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
