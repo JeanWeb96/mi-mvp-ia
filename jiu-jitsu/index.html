@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiu Jitsu Dojo - Entrena, Crece, Domina</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#dbd0bb',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-[100] py-4">
+        <div class="container mx-auto flex justify-between items-center px-6 lg:px-8">
+            <a href="#inicio" class="text-2xl font-bold text-gray-900 flex items-center">
+                <img src="https://loremflickr.com/50/50/jiujitsu_logo" alt="Jiu Jitsu Logo" class="h-10 w-10 mr-2 rounded-full object-cover">
+                Jiu Jitsu Dojo
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-gray-600 hover:text-brand transition duration-300 font-medium">Inicio</a>
+                <a href="#servicios" class="text-gray-600 hover:text-brand transition duration-300 font-medium">Clases</a>
+                <a href="#contacto" class="text-gray-600 hover:text-brand transition duration-300 font-medium">Contacto</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-brand focus:outline-none">
+                    <i data-lucide="menu" class="w-7 h-7"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 shadow-lg">
+            <nav class="flex flex-col items-center space-y-4">
+                <a href="#inicio" class="text-gray-800 hover:text-brand transition duration-300 font-medium text-lg py-2">Inicio</a>
+                <a href="#servicios" class="text-gray-800 hover:text-brand transition duration-300 font-medium text-lg py-2">Clases</a>
+                <a href="#contacto" class="text-gray-800 hover:text-brand transition duration-300 font-medium text-lg py-2">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="relative h-screen flex items-center justify-center text-white overflow-hidden pt-24">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://loremflickr.com/1920/1080/jiujitsu_training,dojo');">
+                <div class="absolute inset-0 bg-black opacity-60"></div>
+            </div>
+            <div class="relative z-10 text-center px-6">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+                    Domina el Arte del Jiu Jitsu
+                </h1>
+                <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                    Transforma tu cuerpo y mente. Aprende disciplina, fuerza y autodefensa en nuestro dojo.
+                </p>
+                <a href="#servicios" class="inline-block bg-brand text-gray-900 font-bold py-4 px-10 rounded-full text-lg hover:bg-opacity-90 transition duration-300 shadow-lg">
+                    Ver Clases
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 bg-white" id="sobre-nosotros">
+            <div class="container mx-auto px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://loremflickr.com/800/600/jiujitsu_students,dojo" alt="Jiu Jitsu Students" class="rounded-lg shadow-xl object-cover w-full h-auto">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">¿Por Qué Elegir Jiu Jitsu?</h2>
+                    <p class="text-lg text-gray-700 mb-4 leading-relaxed">
+                        El Jiu Jitsu Brasileño es más que un deporte; es una filosofía de vida. Desarrolla no solo tu fuerza física y habilidades de autodefensa, sino también tu disciplina mental, resiliencia y confianza. En nuestro dojo, te unirás a una comunidad de apoyo donde cada miembro se esfuerza por mejorar.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Desde principiantes hasta avanzados, ofrecemos un ambiente seguro y desafiante para todos los niveles. ¡Descubre tu potencial!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services/Classes Section -->
+        <section id="servicios" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold text-gray-900 mb-12">Nuestras Clases</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Class Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-brand mb-6">
+                            <i data-lucide="user" class="w-12 h-12 mx-auto"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Jiu Jitsu para Principiantes</h3>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            Introducción a los fundamentos del BJJ. Aprende las posturas básicas, escapes y sumisiones en un ambiente amigable.
+                        </p>
+                        <a href="#contacto" class="inline-block bg-brand text-gray-900 font-bold py-3 px-6 rounded-full text-md hover:bg-opacity-90 transition duration-300">
+                            Inscríbete
+                        </a>
+                    </div>
+                    <!-- Class Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-brand mb-6">
+                            <i data-lucide="users" class="w-12 h-12 mx-auto"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Jiu Jitsu Avanzado</h3>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            Perfecciona tus técnicas, explora estrategias complejas y participa en sparring desafiantes.
+                        </p>
+                        <a href="#contacto" class="inline-block bg-brand text-gray-900 font-bold py-3 px-6 rounded-full text-md hover:bg-opacity-90 transition duration-300">
+                            Inscríbete
+                        </a>
+                    </div>
+                    <!-- Class Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-brand mb-6">
+                            <i data-lucide="baby" class="w-12 h-12 mx-auto"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Jiu Jitsu para Niños</h3>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            Desarrolla disciplina, respeto y confianza en los más pequeños a través del arte marcial.
+                        </p>
+                        <a href="#contacto" class="inline-block bg-brand text-gray-900 font-bold py-3 px-6 rounded-full text-md hover:bg-opacity-90 transition duration-300">
+                            Inscríbete
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-20 bg-brand text-gray-900 text-center">
+            <div class="container mx-auto px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-6">¿Listo para Empezar tu Viaje?</h2>
+                <p class="text-xl mb-10 max-w-3xl mx-auto">
+                    No importa tu nivel de experiencia, te invitamos a una clase de prueba gratuita. ¡Descubre la diferencia!
+                </p>
+                <a href="#contacto" class="inline-block bg-gray-900 text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-gray-700 transition duration-300 shadow-lg">
+                    Agenda tu Clase de Prueba
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-20 bg-white">
+            <div class="container mx-auto px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold text-gray-900 mb-12">Contáctanos</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <!-- Contact Form -->
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-left">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Envíanos un Mensaje</h3>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nombre Completo</label>
+                                <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand focus:border-brand" placeholder="Tu Nombre">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand focus:border-brand" placeholder="tu@ejemplo.com">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label>
+                                <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:ring-brand focus:border-brand" placeholder="Escribe tu mensaje aquí..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand text-gray-900 font-bold py-3 px-6 rounded-md hover:bg-opacity-90 transition duration-300">
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info & Map -->
+                    <div class="space-y-8">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-left">
+                            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Nuestra Ubicación</h3>
+                            <div class="space-y-4 text-gray-700">
+                                <p class="flex items-center">
+                                    <i data-lucide="map-pin" class="w-6 h-6 mr-3 text-brand"></i>
+                                    Calle Mayor 1, 28013 Madrid, España
+                                </p>
+                                <p class="flex items-center">
+                                    <i data-lucide="phone" class="w-6 h-6 mr-3 text-brand"></i>
+                                    +34 912 345 678
+                                </p>
+                                <p class="flex items-center">
+                                    <i data-lucide="mail" class="w-6 h-6 mr-3 text-brand"></i>
+                                    info@jiujitsudojo.es
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Google Maps -->
+                        <div class="w-full h-96 bg-gray-200 rounded-lg shadow-lg overflow-hidden">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.590123456789!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec16188876!2sPuerta%20del%20Sol%2C%2028013%20Madrid!5e0!3m2!1sen!2ses!4v1678901234567!5m2!1sen!2ses"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-brand transition duration-300">
+                    <i data-lucide="facebook" class="w-6 h-6"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-brand transition duration-300">
+                    <i data-lucide="instagram" class="w-6 h-6"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-brand transition duration-300">
+                    <i data-lucide="youtube" class="w-6 h-6"></i>
+                </a>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2023 Jiu Jitsu Dojo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Mandatory Script for Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
