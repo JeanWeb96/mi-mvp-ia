@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Express - Tu Sushi Fresco a Domicilio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom scrollbar for aesthetics, optional */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #EE936C;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d47e5a;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-[100] py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#inicio" class="text-2xl font-bold text-[#EE936C]">Sushi Express</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#inicio" class="text-gray-600 hover:text-[#EE936C] transition duration-300">Inicio</a></li>
+                    <li><a href="#servicios" class="text-gray-600 hover:text-[#EE936C] transition duration-300">Menú</a></li>
+                    <li><a href="#contacto" class="text-gray-600 hover:text-[#EE936C] transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('https://loremflickr.com/1200/800/sushi,japanese,food'); margin-top: 80px;">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center p-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4">Sabor Japonés Auténtico, Directo a Tu Puerta</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Disfruta del sushi más fresco y delicioso, preparado con pasión y los mejores ingredientes.</p>
+            <a href="#servicios" class="bg-[#EE936C] hover:bg-[#d47e5a] text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">Ver Nuestro Menú</a>
+        </div>
+    </section>
+
+    <!-- Services/Menu Section -->
+    <section id="servicios" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-800">Nuestro Menú Exquisito</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Menu Item 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://loremflickr.com/800/600/sushi,rolls" alt="Sushi Rolls" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Maki Rolls Variados</h3>
+                        <p class="text-gray-600 mb-4">Clásicos y especiales, con ingredientes frescos como salmón, atún, aguacate y pepino.</p>
+                        <div class="flex items-center justify-center text-[#EE936C]">
+                            <i data-lucide="fish" class="w-5 h-5 mr-2"></i>
+                            <span class="font-medium">Frescura Garantizada</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://loremflickr.com/800/600/sushi,nigiri" alt="Nigiri" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Nigiri Tradicional</h3>
+                        <p class="text-gray-600 mb-4">Delicadas porciones de arroz con los cortes más finos de pescado y marisco.</p>
+                        <div class="flex items-center justify-center text-[#EE936C]">
+                            <i data-lucide="chef-hat" class="w-5 h-5 mr-2"></i>
+                            <span class="font-medium">Preparación Artesanal</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://loremflickr.com/800/600/sushi,sashimi" alt="Sashimi" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Sashimi Premium</h3>
+                        <p class="text-gray-600 mb-4">Selección de los mejores pescados crudos, cortados a la perfección para realzar su sabor.</p>
+                        <div class="flex items-center justify-center text-[#EE936C]">
+                            <i data-lucide="award" class="w-5 h-5 mr-2"></i>
+                            <span class="font-medium">Calidad Superior</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://loremflickr.com/800/600/sushi,tempura" alt="Tempura" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Tempura Crujiente</h3>
+                        <p class="text-gray-600 mb-4">Vegetales y mariscos en una ligera y crujiente tempura, fritos a la perfección.</p>
+                        <div class="flex items-center justify-center text-[#EE936C]">
+                            <i data-lucide="shrimp" class="w-5 h-5 mr-2"></i>
+                            <span class="font-medium">Textura Inigualable</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://loremflickr.com/800/600/sushi,uramaki" alt="Uramaki" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Uramaki Especiales</h3>
+                        <p class="text-gray-600 mb-4">Rollos invertidos con arroz por fuera, rellenos creativos y toppings deliciosos.</p>
+                        <div class="flex items-center justify-center text-[#EE936C]">
+                            <i data-lucide="sparkles" class="w-5 h-5 mr-2"></i>
+                            <span class="font-medium">Innovación y Sabor</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Item 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="https://loremflickr.com/800/600/sushi,bowls" alt="Poke Bowls" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Poke Bowls Frescos</h3>
+                        <p class="text-gray-600 mb-4">Una opción saludable y deliciosa con base de arroz, pescado marinado y vegetales.</p>
+                        <div class="flex items-center justify-center text-[#EE936C]">
+                            <i data-lucide="salad" class="w-5 h-5 mr-2"></i>
+                            <span class="font-medium">Opción Saludable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 text-gray-800">Contáctanos</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <!-- Contact Info -->
+                <div class="text-left p-6 bg-gray-50 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Estamos Listos para Atenderte</h3>
+                    <p class="text-gray-700 mb-4 flex items-center">
+                        <i data-lucide="map-pin" class="w-5 h-5 mr-3 text-[#EE936C]"></i>
+                        Calle Gran Vía, 45, 28013 Madrid, España
+                    </p>
+                    <p class="text-gray-700 mb-4 flex items-center">
+                        <i data-lucide="phone" class="w-5 h-5 mr-3 text-[#EE936C]"></i>
+                        +34 912 345 678
+                    </p>
+                    <p class="text-gray-700 mb-4 flex items-center">
+                        <i data-lucide="mail" class="w-5 h-5 mr-3 text-[#EE936C]"></i>
+                        info@sushiexpress.es
+                    </p>
+                    <p class="text-gray-700 mb-4 flex items-center">
+                        <i data-lucide="clock" class="w-5 h-5 mr-3 text-[#EE936C]"></i>
+                        Lunes a Domingo: 12:00 - 23:00
+                    </p>
+                    <a href="mailto:info@sushiexpress.es" class="inline-block mt-6 bg-[#EE936C] hover:bg-[#d47e5a] text-white font-bold py-3 px-6 rounded-full transition duration-300">Enviar un Email</a>
+                </div>
+
+                <!-- Google Maps -->
+                <div class="w-full h-96 rounded-lg overflow-hidden shadow-md">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2000000000005!2d-3.703790284604999!3d40.41831197936499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e27e2e2e2%3A0x2e2e2e2e2e2e2e2e!2sGran%20V%C3%ADa%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses!2ses!4v1678888888888!5m2!1ses!2ses"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Sushi Express. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-[#EE936C] transition duration-300"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="#" class="text-gray-400 hover:text-[#EE936C] transition duration-300"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="#" class="text-gray-400 hover:text-[#EE936C] transition duration-300"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Script -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- Smooth Scroll Script (Mandatory) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
