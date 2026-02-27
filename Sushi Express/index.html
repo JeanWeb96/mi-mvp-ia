@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Express - Tu Sushi en el Pirineo Aragonés</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .brand-color-bg {
+            background-color: #EE936C;
+        }
+        .brand-color-text {
+            color: #EE936C;
+        }
+        .brand-color-border {
+            border-color: #EE936C;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold brand-color-text">Sushi Express</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#inicio" class="hover:brand-color-text transition duration-300">Inicio</a></li>
+                    <li><a href="#nosotros" class="hover:brand-color-text transition duration-300">Nosotros</a></li>
+                    <li><a href="#menu" class="hover:brand-color-text transition duration-300">Menú</a></li>
+                    <li><a href="#contacto" class="hover:brand-color-text transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Attention) -->
+    <section id="inicio" class="relative bg-cover bg-center h-screen flex items-center justify-center text-white" style="background-image: url('https://images.unsplash.com/photo-1579871128704-9111128223c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                Sushi Fresco en el Corazón del Pirineo Aragonés
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                Tu experiencia culinaria japonesa, ahora a tu alcance en la montaña.
+            </p>
+            <a href="#menu" class="brand-color-bg text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+                Explora Nuestro Menú
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us / Features Section (Interest) -->
+    <section id="nosotros" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 brand-color-text">¿Por Qué Elegir Sushi Express?</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-5xl brand-color-text mb-4">🍣</div>
+                    <h3 class="text-2xl font-semibold mb-3">Frescura Inigualable</h3>
+                    <p class="text-gray-600">
+                        Seleccionamos los ingredientes más frescos y de la más alta calidad para garantizar un sabor excepcional en cada bocado.
+                    </p>
+                </div>
+                <div class="p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-5xl brand-color-text mb-4">🏔️</div>
+                    <h3 class="text-2xl font-semibold mb-3">Sabor en la Montaña</h3>
+                    <p class="text-gray-600">
+                        Llevamos la auténtica experiencia del sushi directamente a tu puerta, estés donde estés en el Pirineo Aragonés.
+                    </p>
+                </div>
+                <div class="p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-5xl brand-color-text mb-4">👨‍🍳</div>
+                    <h3 class="text-2xl font-semibold mb-3">Maestría Artesanal</h3>
+                    <p class="text-gray-600">
+                        Nuestros chefs expertos preparan cada pieza con pasión y precisión, creando obras de arte culinarias.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview / Testimonials (Desire) -->
+    <section id="menu" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12 brand-color-text">Una Experiencia que Desearás Repetir</h2>
+            <p class="text-xl text-gray-700 mb-10 max-w-3xl mx-auto">
+                Imagina el sabor delicado del salmón fresco, la textura perfecta del arroz y la explosión de sabores en cada bocado. Cada pieza es una obra de arte, diseñada para deleitar tus sentidos y transportarte a un mundo de sabor.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Example Menu Item 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1563612116625-30103d83e0ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Nigiri Variado" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Nigiri Variado</h3>
+                        <p class="text-gray-600 mb-4">Salmón, atún y pez mantequilla. Frescura en cada pieza.</p>
+                        <span class="text-xl font-bold brand-color-text">Desde 12€</span>
+                    </div>
+                </div>
+                <!-- Example Menu Item 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1553621042-f6e7609bbcd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80" alt="Maki Rolls Especiales" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Maki Rolls Especiales</h3>
+                        <p class="text-gray-600 mb-4">Combinaciones únicas para paladares aventureros.</p>
+                        <span class="text-xl font-bold brand-color-text">Desde 15€</span>
+                    </div>
+                </div>
+                <!-- Example Menu Item 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1562953000-c1172112111d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Sashimi de Atún" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2">Sashimi de Atún</h3>
+                        <p class="text-gray-600 mb-4">Finas láminas del mejor atún, puro sabor.</p>
+                        <span class="text-xl font-bold brand-color-text">Desde 18€</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="brand-color-bg text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
+                Ver Menú Completo
+            </a>
+        </div>
+    </section>
+
+    <!-- Call to Action (Action) -->
+    <section id="contacto" class="py-20 brand-color-bg text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6">¿Listo para tu Experiencia Sushi Express?</h2>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">
+                No esperes más para disfrutar del mejor sushi en el Pirineo Aragonés. Haz tu pedido ahora y déjate sorprender.
+            </p>
+            <a href="#" class="bg-white brand-color-text font-bold py-4 px-10 rounded-full text-xl hover:bg-gray-100 transition duration-300 transform hover:scale-105 shadow-lg">
+                ¡Pide Ahora!
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Sushi Express. Todos los derechos reservados.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Política de Privacidad</a>
+                <span class="text-gray-500">|</span>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Términos y Condiciones</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
