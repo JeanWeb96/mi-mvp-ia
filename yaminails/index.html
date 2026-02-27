@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YamiNails - Tu Salón de Uñas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#B2AC88',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for smooth scroll and mobile menu */
+        .mobile-menu {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .mobile-menu.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed top-0 z-[100] w-full bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#inicio" class="text-2xl font-bold text-brand-primary">YamiNails</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-gray-600 hover:text-brand-primary transition duration-300">Inicio</a>
+                <a href="#servicios" class="text-gray-600 hover:text-brand-primary transition duration-300">Servicios</a>
+                <a href="#contacto" class="text-gray-600 hover:text-brand-primary transition duration-300">Contacto</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-brand-primary focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <nav id="mobile-menu" class="mobile-menu flex-col items-center bg-white absolute top-full left-0 w-full shadow-lg py-4 md:hidden">
+            <a href="#inicio" class="block py-2 text-gray-600 hover:text-brand-primary transition duration-300" onclick="document.getElementById('mobile-menu').classList.remove('active');">Inicio</a>
+            <a href="#servicios" class="block py-2 text-gray-600 hover:text-brand-primary transition duration-300" onclick="document.getElementById('mobile-menu').classList.remove('active');">Servicios</a>
+            <a href="#contacto" class="block py-2 text-gray-600 hover:text-brand-primary transition duration-300" onclick="document.getElementById('mobile-menu').classList.remove('active');">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://loremflickr.com/800/600/nails,beauty');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="relative z-10 text-white px-4">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 animate-fade-in-up">YamiNails</h1>
+                <p class="text-xl md:text-2xl mb-8 animate-fade-in-up delay-200">Donde la belleza de tus manos cobra vida.</p>
+                <a href="#servicios" class="inline-block bg-brand-primary text-white text-lg font-semibold px-8 py-3 rounded-full hover:bg-opacity-90 transition duration-300 animate-fade-in-up delay-400">Explora Nuestros Servicios</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Nuestros Servicios</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Service 1 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition duration-300">
+                        <i data-lucide="sparkles" class="w-12 h-12 text-brand-primary mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Manicura Clásica</h3>
+                        <p class="text-gray-600 mb-4">Cuidado completo para tus manos y uñas, dejándolas impecables y saludables.</p>
+                        <img src="https://loremflickr.com/800/600/manicure" alt="Manicura Clásica" class="rounded-lg w-full h-48 object-cover mt-4">
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition duration-300">
+                        <i data-lucide="footprints" class="w-12 h-12 text-brand-primary mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Pedicura Spa</h3>
+                        <p class="text-gray-600 mb-4">Relaja tus pies con un tratamiento de spa que los dejará suaves y renovados.</p>
+                        <img src="https://loremflickr.com/800/600/pedicure" alt="Pedicura Spa" class="rounded-lg w-full h-48 object-cover mt-4">
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition duration-300">
+                        <i data-lucide="gem" class="w-12 h-12 text-brand-primary mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Uñas de Gel/Acrílico</h3>
+                        <p class="text-gray-600 mb-4">Extensiones duraderas y con un acabado perfecto para un look espectacular.</p>
+                        <img src="https://loremflickr.com/800/600/gelnails" alt="Uñas de Gel" class="rounded-lg w-full h-48 object-cover mt-4">
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition duration-300">
+                        <i data-lucide="palette" class="w-12 h-12 text-brand-primary mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Nail Art Personalizado</h3>
+                        <p class="text-gray-600 mb-4">Diseños únicos y creativos para expresar tu estilo en cada uña.</p>
+                        <img src="https://loremflickr.com/800/600/nailart" alt="Nail Art" class="rounded-lg w-full h-48 object-cover mt-4">
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition duration-300">
+                        <i data-lucide="brush" class="w-12 h-12 text-brand-primary mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Esmaltado Semipermanente</h3>
+                        <p class="text-gray-600 mb-4">Color vibrante y duradero por semanas sin preocuparte por el desgaste.</p>
+                        <img src="https://loremflickr.com/800/600/shellac" alt="Esmaltado Semipermanente" class="rounded-lg w-full h-48 object-cover mt-4">
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition duration-300">
+                        <i data-lucide="hand" class="w-12 h-12 text-brand-primary mx-auto mb-4"></i>
+                        <h3 class="text-2xl font-semibold mb-3 text-gray-800">Tratamientos de Parafina</h3>
+                        <p class="text-gray-600 mb-4">Hidratación profunda para manos y pies, dejándolos increíblemente suaves.</p>
+                        <img src="https://loremflickr.com/800/600/paraffin" alt="Tratamientos de Parafina" class="rounded-lg w-full h-48 object-cover mt-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">Contáctanos</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Form & Info -->
+                    <div>
+                        <p class="text-lg text-gray-700 mb-8">¿Tienes alguna pregunta o quieres reservar una cita? ¡Estamos aquí para ayudarte!</p>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-brand-primary focus:border-brand-primary">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-brand-primary focus:border-brand-primary">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-brand-primary focus:border-brand-primary"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-brand-primary text-white font-semibold py-3 px-6 rounded-md hover:bg-opacity-90 transition duration-300">Enviar Mensaje</button>
+                        </form>
+                        <div class="mt-10 text-center lg:text-left">
+                            <h3 class="text-2xl font-semibold mb-4 text-gray-800">Nuestra Ubicación</h3>
+                            <p class="text-gray-700 flex items-center justify-center lg:justify-start mb-2">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-brand-primary mr-2"></i>
+                                Calle Gran Vía, 28, 28013 Madrid, España
+                            </p>
+                            <p class="text-gray-700 flex items-center justify-center lg:justify-start mb-2">
+                                <i data-lucide="phone" class="w-5 h-5 text-brand-primary mr-2"></i>
+                                +34 912 345 678
+                            </p>
+                            <p class="text-gray-700 flex items-center justify-center lg:justify-start">
+                                <i data-lucide="mail" class="w-5 h-5 text-brand-primary mr-2"></i>
+                                info@yaminails.com
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Google Maps -->
+                    <div class="w-full h-[450px] rounded-lg shadow-lg overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2000000000005!2d-3.7057700000000003!3d40.419000000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec16188862!2sGran%20V%C3%ADa%2C%2028%2C%2028013%20Madrid%2C%20Espa%C3%B1a!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+                            width="100%"
+                            height="450"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2023 YamiNails. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-brand-primary transition duration-300"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="#" class="text-gray-400 hover:text-brand-primary transition duration-300"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="#" class="text-gray-400 hover:text-brand-primary transition duration-300"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
