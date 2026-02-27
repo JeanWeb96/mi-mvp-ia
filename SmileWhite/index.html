@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmileWhite - Clínica Dental en Jaca, Huesca</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom brand color */
+        .bg-brand-light-blue {
+            background-color: #E0FFFF;
+        }
+        .text-brand-light-blue {
+            color: #E0FFFF;
+        }
+        .border-brand-light-blue {
+            border-color: #E0FFFF;
+        }
+        .hover\:bg-brand-light-blue:hover {
+            background-color: #E0FFFF;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white">
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm py-4">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <a href="#" class="text-2xl font-bold text-cyan-600">SmileWhite</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#inicio" class="hover:text-cyan-600 transition duration-300">Inicio</a></li>
+                <li><a href="#servicios" class="hover:text-cyan-600 transition duration-300">Servicios</a></li>
+                <li><a href="#nosotros" class="hover:text-cyan-600 transition duration-300">Nosotros</a></li>
+                <li><a href="#contacto" class="hover:text-cyan-600 transition duration-300">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="bg-cyan-600 text-white px-5 py-2 rounded-full hover:bg-cyan-700 transition duration-300 hidden md:block">Agenda Tu Cita</a>
+            <!-- Mobile Menu Button (optional, for a full site) -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section (Attention) -->
+        <section id="inicio" class="relative bg-brand-light-blue py-20 md:py-32 text-center overflow-hidden">
+            <div class="container mx-auto px-4 relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6 animate-fade-in-up">
+                    Transforma Tu Sonrisa en <span class="text-cyan-700">SmileWhite</span>
+                    <br>Tu Clínica Dental de Confianza en Jaca
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-10 max-w-3xl mx-auto animate-fade-in-up delay-100">
+                    En SmileWhite, combinamos la excelencia médica con un trato humano y cercano para ofrecerte la sonrisa radiante que siempre has soñado. ¡Tu bienestar es nuestra prioridad!
+                </p>
+                <a href="#contacto" class="inline-block bg-cyan-600 text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-cyan-700 transition duration-300 transform hover:scale-105 animate-fade-in-up delay-200">
+                    Agenda Tu Cita Hoy
+                </a>
+            </div>
+            <!-- Optional: Add a subtle background pattern or image here -->
+        </section>
+
+        <!-- Services Section (Interest) -->
+        <section id="servicios" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                    ¿Qué Podemos Hacer Por Ti?
+                </h2>
+                <p class="text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
+                    Descubre nuestra amplia gama de tratamientos diseñados para cuidar tu salud bucal y realzar la belleza de tu sonrisa. En SmileWhite, cada tratamiento es personalizado para ti.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-5xl text-cyan-600 mb-4">🦷</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Odontología General</h3>
+                        <p class="text-gray-600">Revisiones, limpiezas, empastes y tratamientos para mantener tu boca sana y fuerte.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-5xl text-cyan-600 mb-4">✨</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Estética Dental</h3>
+                        <p class="text-gray-600">Blanqueamientos, carillas y diseño de sonrisa para una apariencia radiante.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-5xl text-cyan-600 mb-4">🔩</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Implantes Dentales</h3>
+                        <p class="text-gray-600">Soluciones duraderas y estéticas para reemplazar dientes perdidos con total confianza.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                        <div class="text-5xl text-cyan-600 mb-4">😁</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Ortodoncia</h3>
+                        <p class="text-gray-600">Alinea tu sonrisa con tratamientos modernos, incluyendo ortodoncia invisible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us / Testimonials (Desire) -->
+        <section id="nosotros" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
+                    La Experiencia SmileWhite: Confianza y Calidad en Cada Visita
+                </h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 text-cyan-600 text-3xl mr-4">✅</div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Equipo Profesional y Cercano</h3>
+                                <p class="text-gray-700">Un equipo de expertos dedicados a tu comodidad y salud, con un trato humano y empático que te hará sentir en casa.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 text-cyan-600 text-3xl mr-4">💡</div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Tecnología Avanzada</h3>
+                                <p class="text-gray-700">Utilizamos la última tecnología para diagnósticos precisos y tratamientos eficientes, garantizando los mejores resultados.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 text-cyan-600 text-3xl mr-4">💖</div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Tratamiento Personalizado</h3>
+                                <p class="text-gray-700">Cada sonrisa es única. Diseñamos soluciones a medida que se adaptan perfectamente a tus necesidades y expectativas.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 text-cyan-600 text-3xl mr-4">😌</div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Ambiente Relajante</h3>
+                                <p class="text-gray-700">Nuestras instalaciones están diseñadas para que te sientas tranquilo y cómodo en todo momento, minimizando cualquier ansiedad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-brand-light-blue p-8 rounded-lg shadow-lg text-center">
+                        <p class="text-xl italic text-gray-800 mb-6">
+                            "Desde que descubrí SmileWhite, mi miedo al dentista desapareció. El equipo es increíblemente amable y profesional, y mi sonrisa nunca ha lucido mejor. ¡Totalmente recomendados en Jaca!"
+                        </p>
+                        <p class="font-semibold text-gray-900">— María G., Paciente Satisfecha</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Contact Section (Action) -->
+        <section id="contacto" class="py-16 md:py-24 bg-brand-light-blue text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                    ¡No Esperes Más para Lucir Tu Mejor Sonrisa!
+                </h2>
+                <p class="text-lg md:text-xl text-gray-700 mb-10 max-w-3xl mx-auto">
+                    Contacta con nosotros hoy mismo y da el primer paso hacia una salud bucal óptima y una sonrisa deslumbrante. Estamos en Jaca, Huesca, listos para atenderte.
+                </p>
+                <a href="tel:+34123456789" class="inline-block bg-cyan-600 text-white text-lg font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-cyan-700 transition duration-300 transform hover:scale-105 mb-8">
+                    Llámanos Ahora: +34 123 456 789
+                </a>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 text-gray-800">
+                    <p class="text-lg"><strong class="text-cyan-700">Dirección:</strong> Calle Ficticia, 123, 22700 Jaca, Huesca</p>
+                    <p class="text-lg"><strong class="text-cyan-700">Email:</strong> info@smilewhite.es</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 SmileWhite. Todos los derechos reservados.</p>
+            <p class="mt-2 text-sm">Clínica Dental en Jaca, Huesca.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
