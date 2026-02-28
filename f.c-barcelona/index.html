@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.C Barcelona - Más que un club</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/lucide.min.js"></script>
+    <style>
+        .brand-color-bg { background-color: #722F37; }
+        .brand-color-text { color: #722F37; }
+        .brand-color-border { border-color: #722F37; }
+        .brand-color-hover:hover { background-color: #5a252b; }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-[100] bg-white shadow-md p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img src="https://loremflickr.com/50/50/barcelona%20logo" alt="F.C Barcelona Logo" class="h-10 w-10 mr-3 rounded-full">
+            <a href="#inicio" class="text-2xl font-bold brand-color-text">F.C Barcelona</a>
+        </div>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#inicio" class="text-lg hover:brand-color-text transition-colors duration-300">Inicio</a></li>
+                <li><a href="#servicios" class="text-lg hover:brand-color-text transition-colors duration-300">Servicios</a></li>
+                <li><a href="#contacto" class="text-lg hover:brand-color-text transition-colors duration-300">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://loremflickr.com/1200/800/football%20stadium,barcelona'); padding-top: 70px;">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 text-white p-8 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">F.C Barcelona: Más que un club</h1>
+            <p class="text-xl md:text-2xl mb-10">Vive la pasión, la historia y el futuro del fútbol con nosotros. Únete a la familia culé.</p>
+            <a href="#servicios" class="inline-block brand-color-bg text-white text-xl font-semibold py-4 px-8 rounded-full shadow-lg brand-color-hover transition-all duration-300 transform hover:scale-105">
+                Descubre Nuestros Servicios
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12 brand-color-text">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="brand-color-text mb-4">
+                        <i data-lucide="ticket" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Entradas y Experiencias</h3>
+                    <p class="text-gray-600">Asegura tu lugar en el Camp Nou. Vive la emoción de cada partido y tour por el estadio.</p>
+                    <img src="https://loremflickr.com/800/600/football%20match" alt="Football Match" class="mt-6 rounded-lg shadow-md">
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="brand-color-text mb-4">
+                        <i data-lucide="shirt" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Tienda Oficial</h3>
+                    <p class="text-gray-600">Encuentra la camiseta oficial, equipaciones y merchandising exclusivo del club.</p>
+                    <img src="https://loremflickr.com/800/600/football%20merchandise" alt="Football Merchandise" class="mt-6 rounded-lg shadow-md">
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="brand-color-text mb-4">
+                        <i data-lucide="users" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Socios y Peñas</h3>
+                    <p class="text-gray-600">Únete a nuestra comunidad global de socios y peñas. Disfruta de beneficios exclusivos.</p>
+                    <img src="https://loremflickr.com/800/600/football%20fans" alt="Football Fans" class="mt-6 rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-12 brand-color-text">Contáctanos</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="md:w-1/2 text-left">
+                    <p class="text-lg mb-4">¿Tienes preguntas o quieres saber más sobre F.C Barcelona? No dudes en contactarnos.</p>
+                    <p class="text-xl font-semibold mb-2">Nuestra Ubicación:</p>
+                    <p class="text-lg mb-6">Calle Luis Serra 2, Jaca 22700, Huesca</p>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Tu Nombre" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#722F37]">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Tu Email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#722F37]">
+                        </div>
+                        <div>
+                            <textarea placeholder="Tu Mensaje" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#722F37]"></textarea>
+                        </div>
+                        <button type="submit" class="brand-color-bg text-white text-lg font-semibold py-3 px-6 rounded-md shadow-md brand-color-hover transition-all duration-300">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                <div class="md:w-1/2 w-full h-96 rounded-lg shadow-lg overflow-hidden">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Calle%20Luis%20Serra%202%2C%20Jaca%2022700%2C%20Huesca&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="brand-color-bg text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 F.C Barcelona. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-white hover:text-gray-300"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="#" class="text-white hover:text-gray-300"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+                <a href="#" class="text-white hover:text-gray-300"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop - 70, // Compensate for fixed header height
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
