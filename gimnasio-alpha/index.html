@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Alpha - Tu Mejor Versión Comienza Aquí</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/lucide.min.js"></script>
+    <style>
+        /* Custom styles for the brand color */
+        .btn-primary {
+            background-color: #B2AC88;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #9e9a7a; /* Slightly darker for hover */
+        }
+        .text-primary-accent {
+            color: #B2AC88;
+        }
+        .border-primary-accent {
+            border-color: #B2AC88;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-[100] py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#inicio" class="text-2xl font-bold text-gray-900">Gimnasio Alpha</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#inicio" class="hover:text-primary-accent transition duration-300">Inicio</a></li>
+                    <li><a href="#servicios" class="hover:text-primary-accent transition duration-300">Servicios</a></li>
+                    <li><a href="#contacto" class="hover:text-primary-accent transition duration-300">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://loremflickr.com/800/600/gym,fitness,workout'); padding-top: 96px;">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 text-white px-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">Transforma Tu Cuerpo, Transforma Tu Vida</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">En Gimnasio Alpha, te ofrecemos las herramientas y el apoyo para alcanzar tus metas de fitness.</p>
+            <a href="#servicios" class="btn-primary px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition duration-300 ease-in-out">Descubre Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12">Nuestros Servicios</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-primary-accent mb-4">
+                        <i data-lucide="dumbbell" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Entrenamiento Personalizado</h3>
+                    <p class="text-gray-600">Programas a medida diseñados por expertos para maximizar tus resultados y alcanzar tus objetivos específicos.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-primary-accent mb-4">
+                        <i data-lucide="users" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Clases Grupales</h3>
+                    <p class="text-gray-600">Desde spinning y yoga hasta HIIT y zumba, encuentra la clase perfecta para mantenerte motivado y en forma.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="text-primary-accent mb-4">
+                        <i data-lucide="apple" class="w-12 h-12 mx-auto"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Asesoramiento Nutricional</h3>
+                    <p class="text-gray-600">Guía profesional para una alimentación saludable que complemente tu rutina de ejercicios y optimice tu bienestar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://loremflickr.com/800/600/gym,equipment" alt="Modern Gym Equipment" class="rounded-lg shadow-xl w-full h-auto object-cover">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-4xl font-bold mb-6">¿Por Qué Elegir Gimnasio Alpha?</h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    En Gimnasio Alpha, nos dedicamos a crear un ambiente donde todos se sientan bienvenidos y motivados. Contamos con equipos de última generación, entrenadores certificados y una comunidad de apoyo que te impulsará a superar tus límites.
+                </p>
+                <ul class="space-y-3 text-lg text-gray-700">
+                    <li class="flex items-center justify-center md:justify-start">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-primary-accent mr-3"></i>
+                        Equipamiento de vanguardia
+                    </li>
+                    <li class="flex items-center justify-center md:justify-start">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-primary-accent mr-3"></i>
+                        Entrenadores altamente cualificados
+                    </li>
+                    <li class="flex items-center justify-center md:justify-start">
+                        <i data-lucide="check-circle" class="w-6 h-6 text-primary-accent mr-3"></i>
+                        Ambiente motivador y amigable
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 bg-gray-800 text-white text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-6">¡Empieza Tu Viaje Fitness Hoy!</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">No esperes más para alcanzar la mejor versión de ti mismo. Únete a la familia Alpha y siente la diferencia.</p>
+            <a href="#contacto" class="btn-primary px-10 py-5 rounded-full text-xl font-semibold hover:scale-105 transition duration-300 ease-in-out">Contáctanos Ahora</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-12">Contáctanos</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Contact Info -->
+                <div class="text-left bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6">Información de Contacto</h3>
+                    <p class="mb-4 flex items-center">
+                        <i data-lucide="map-pin" class="w-6 h-6 text-primary-accent mr-3"></i>
+                        Calle Gran Vía, 28, 28013 Madrid, España
+                    </p>
+                    <p class="mb-4 flex items-center">
+                        <i data-lucide="phone" class="w-6 h-6 text-primary-accent mr-3"></i>
+                        +34 912 345 678
+                    </p>
+                    <p class="mb-4 flex items-center">
+                        <i data-lucide="mail" class="w-6 h-6 text-primary-accent mr-3"></i>
+                        info@gimnasioalpha.com
+                    </p>
+                    <p class="mb-4 flex items-center">
+                        <i data-lucide="clock" class="w-6 h-6 text-primary-accent mr-3"></i>
+                        Lunes - Viernes: 6:00 - 23:00 | Sábado - Domingo: 8:00 - 20:00
+                    </p>
+                </div>
+                <!-- Google Map -->
+                <div class="w-full h-96 rounded-lg shadow-lg overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2000000000005!2d-3.7056000000000003!3d40.419000000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e000000000%3A0x0000000000000000!2sGran%20V%C3%ADa%2C%2028%2C%2028013%20Madrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1678888888888!5m2!1sen!2sus"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 Gimnasio Alpha. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-primary-accent transition duration-300"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-primary-accent transition duration-300"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-primary-accent transition duration-300"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mandatory Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
