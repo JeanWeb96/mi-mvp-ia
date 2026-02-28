@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacetano F.C. - Tu Club de Fútbol</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom scrollbar for aesthetics, optional */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #6eb2cc;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5a9bb5;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-[100] bg-[#6eb2cc] text-white shadow-lg">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#inicio" class="text-2xl font-bold tracking-wide">Jacetano F.C.</a>
+            <ul class="flex space-x-6">
+                <li><a href="#inicio" class="hover:text-gray-200 transition duration-300">Inicio</a></li>
+                <li><a href="#servicios" class="hover:text-gray-200 transition duration-300">Servicios</a></li>
+                <li><a href="#contacto" class="hover:text-gray-200 transition duration-300">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="relative min-h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: url('https://loremflickr.com/1200/800/football,stadium');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative z-10 text-center p-8 max-w-3xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">Jacetano F.C.</h1>
+                <p class="text-xl md:text-2xl mb-8 drop-shadow-md">Pasión por el fútbol, compromiso con la comunidad.</p>
+                <a href="#servicios" class="bg-[#6eb2cc] hover:bg-[#5a9bb5] text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">Descubre Más</a>
+            </div>
+        </section>
+
+        <!-- Services/Features Section -->
+        <section id="servicios" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-12 text-gray-900">Nuestros Servicios y Valores</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-[#6eb2cc] mb-6">
+                            <i data-lucide="football" class="w-16 h-16 mx-auto"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-900">Formación Deportiva</h3>
+                        <p class="text-gray-600">Desarrollamos el talento de jóvenes futbolistas con entrenamientos de alta calidad y programas personalizados.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-[#6eb2cc] mb-6">
+                            <i data-lucide="users" class="w-16 h-16 mx-auto"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-900">Comunidad y Valores</h3>
+                        <p class="text-gray-600">Fomentamos el trabajo en equipo, el respeto y la deportividad dentro y fuera del campo.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition duration-300 ease-in-out transform hover:-translate-y-2">
+                        <div class="text-[#6eb2cc] mb-6">
+                            <i data-lucide="trophy" class="w-16 h-16 mx-auto"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-900">Competición y Éxito</h3>
+                        <p class="text-gray-600">Participamos en ligas y torneos, buscando siempre la mejora continua y la victoria con honor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-20 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-12 text-gray-900">Contáctanos</h2>
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-lg mb-6 text-gray-700">Estamos ubicados en:</p>
+                    <p class="text-xl font-semibold mb-8 text-gray-800">Calle Luis Serra 2, Jaca 22700, Huesca.</p>
+                    
+                    <!-- Google Maps Embed -->
+                    <div class="relative overflow-hidden rounded-lg shadow-xl" style="padding-top: 56.25%;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.0000000000005!2d-0.5560000000000001!3d42.570000000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd577111111111111%3A0x1111111111111111!2sCalle%20Luis%20Serra%2C%202%2C%2022700%20Jaca%2C%20Huesca!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0; position:absolute; top:0; left:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2023 Jacetano F.C. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-[#6eb2cc] transition duration-300"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-[#6eb2cc] transition duration-300"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-[#6eb2cc] transition duration-300"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Initialization -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+    <!-- Smooth Scroll Script (Mandatory) -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70, // Compensate for fixed header height
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
